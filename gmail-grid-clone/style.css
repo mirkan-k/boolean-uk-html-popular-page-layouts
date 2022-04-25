@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header" 55px
+    "left-menu main right-menu" 1fr /
+    205px 1fr 50px;
+}
+
+/* HEADER */
+.header {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+
+  display: grid;
+  grid-template-columns: 200px 1fr 180px;
+  grid-gap: 5px;
+  overflow: hidden;
+}
+
+/* HEADER LOGO SECTION */
+.header .logo {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 5px;
+  grid-gap: 5px;
+}
+
+.header .logo .hamburger {
+  display: grid;
+  place-items: center;
+}
+
+.header .logo .gmail-logo {
+  display: grid;
+  align-items: center;
+  justify-items: left;
+}
+
+/* HEADER SEARCH SECTION */
+.header .search {
+  display: grid;
+  padding: 5px;
+}
+
+.header .search .search-bar {
+  display: grid;
+  grid-template-columns: 30px minmax(100px, 600px) 40px;
+  align-items: center;
+
+  height: 40px;
+  max-width: 680px;
+  background-color: rgba(175, 179, 192, 0.363);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.header .search-bar .go,
+.header .search-bar .filter {
+  display: grid;
+  place-items: center;
+}
+
+.header .search-bar .search-area {
+  display: inline-block;
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+/* HEADER NAV SECTION */
+.header .nav {
+  display: grid;
+  grid-template-columns: repeat(3, 35px) 49px;
+  justify-content: right;
+  padding: 5px;
+  grid-gap: 5px;
+}
+
+.header .nav .help,
+.header .nav .settings,
+.header .nav .apps-menu,
+.header .nav .profile {
+  display: grid;
+  place-items: center;
+}
+
+/* LEFT MENU */
+.left-menu {
+  grid-area: left-menu;
+  background-color: rgb(255, 255, 255);
+
+  display: grid;
+  grid-template-rows: 60px minmax(60px, 210px) 120px 1fr;
+  grid-gap: 5px;
+
+  padding: 5px 5px 0 5px;
+  overflow: hidden;
+}
+
+.left-menu .text {
+  font-size: 14px;
+}
+
+/* LEFT MENU COMPOSE SECTION */
+.left-menu .compose {
+  display: grid;
+  align-items: center;
+  padding: 5px;
+}
+
+.left-menu .compose .button {
+  background-color: white;
+
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  height: 42px;
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 30px 1fr;
+
+  margin-right: 55px;
+  grid-gap: 10px;
+}
+
+/* LEFT MENU FOLDERS SECTION */
+.left-menu .folders {
+  overflow: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.left-menu .folders ul {
+  display: grid;
+  grid-auto-rows: 32px;
+
+  padding: 5px;
+}
+
+.left-menu .folders li {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 30px 1fr auto;
+
+  grid-gap: 5px;
+}
+
+.left-menu .folders .icon {
+  margin-left: 5px;
+}
+
+.left-menu .folders .counter {
+  font-size: 12px;
+}
+
+/* LEFT MENU MEET SECTION */
+.left-menu .meet {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-gap: 5px;
+}
+.left-menu .meet p {
+  padding: 5px 5px 5px 5px;
+}
+
+.left-menu .meet ul {
+  display: grid;
+  grid-auto-rows: 32px;
+}
+
+.left-menu .meet li {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 30px 1fr;
+
+  margin-right: 20px;
+  padding: 5px;
+  grid-gap: 5px;
+}
+
+/* LEFT MENU CHAT SECTION */
+.left-menu .chat {
+  display: grid;
+  grid-template-rows: 30px 30px 1fr 32px;
+
+  padding: 5px 5px 0 5px;
+  grid-gap: 5px;
+}
+
+.left-menu .chat p {
+  padding: 5px 5px 5px 5px;
+}
+
+.left-menu .chat ul {
+  display: grid;
+  grid-auto-rows: 32px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.left-menu .chat li {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 30px 1fr 20px;
+
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.left-menu .chat .placeholder {
+  padding-top: 20px;
+  display: grid;
+  place-content: center;
+
+  opacity: 20%;
+}
+
+.left-menu .chat .toolbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+  padding: 0 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+/* MAIN */
+.main {
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  grid-gap: 5px;
+  overflow: hidden;
+}
+
+.main .text {
+  font-size: 14px;
+}
+
+/* MAIN TOOLBAR SECTION */
+.main .email-toolbar {
+  display: grid;
+
+  grid-template-columns: 1fr minmax(200px, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.main .email-toolbar .tools {
+  display: grid;
+  justify-items: left;
+  align-items: center;
+
+  grid-template-columns: 30px 30px 30px;
+  grid-gap: 10px;
+  padding-left: 5px;
+}
+.main .email-toolbar .nav-tools {
+  display: grid;
+  justify-items: right;
+  align-items: center;
+
+  grid-template-columns: 1fr 30px 30px;
+  grid-gap: 5px;
+  font-size: 12px;
+}
+
+/* MAIN CATEGORY SECTION */
+.main .email-area {
+  display: grid;
+
+  grid-template-rows: 50px 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+.main .email-area .categories {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(140px, 250px));
+  grid-gap: 5px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.main .email-area .categories .primary,
+.main .email-area .categories .social,
+.main .email-area .categories .promotions {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 25px 100px;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+/* MAIN EMAILS SECTION */
+
+.main .email-area .emails ul {
+  display: grid;
+  grid-auto-rows: 32px;
+  padding: 5px;
+}
+
+.main .email-area .emails li {
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+
+  grid-template-columns: 90px 1fr 55px;
+
+  grid-gap: 5px;
+}
+.main .email-area .emails .selectors {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+}
+
+.main .email-area .emails .email {
+  text-align: start;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 5px;
+}
+
+.main .email-area .emails .email p,
+.main .email-area .emails .email span {
+  display: inline;
+  text-align: start;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .email-area .emails .email span {
+  font-weight: 600;
+}
+.main .email-area .emails .email p,
+.main .email-area .emails .email span,
+.main .email-area .emails .time-date {
+  font-size: 14px;
+}
+/* RIGHT MENU */
+.right-menu {
+  grid-area: right-menu;
+  background-color: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.082);
+
+  display: grid;
+  grid-template-rows: 1fr 32px;
+  grid-gap: 5px;
+
+  padding: 5px;
+}
+
+.right-menu .apps {
+  display: grid;
+  justify-items: center;
+
+  grid-auto-rows: 0.2fr 1fr;
+  grid-gap: 30px;
+  padding: 2px 0;
+}
+
+.right-menu .apps ul {
+  display: grid;
+  grid-auto-rows: 28px;
+
+  padding: 2px;
+  grid-gap: 15px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.right-menu .apps .add-icon,
+.right-menu .apps li,
+.right-menu .hide {
+  display: grid;
+  place-items: center;
+}
+/* RESPONSIVE LAYOUTS */
+
+@media screen and (max-width: 700px) {
+  .layout {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template:
+      "header header header" 55px
+      "left-menu main right-menu" 1fr /
+      50px 1fr 50px;
+  }
+  .left-menu {
+    grid-template-rows: 60px minmax(60px, 210px) 76px 1fr;
+  }
+
+  .left-menu .text,
+  .left-menu .counter {
+    display: none;
+  }
+  .left-menu .compose {
+    justify-items: start;
+    padding: 0;
+  }
+
+  .left-menu .compose .button {
+    border-radius: 25px;
+
+    margin-right: 0;
+    grid-gap: 0;
+    padding: 6px;
+  }
+  .left-menu .chat {
+    grid-template-rows: 30px 1fr;
+    padding: 0;
+  }
+  .left-menu .chat li {
+    padding-left: 10px;
+  }
+
+  .left-menu .chat .icon {
+    padding-bottom: 10px;
+  }
+  .left-menu .chat .placeholder {
+    display: none;
+  }
+  .left-menu .chat .toolbar {
+    grid-template-columns: 20px 20px;
+    align-items: start;
+
+    grid-gap: 2px;
+    padding: 0 0;
+    border-top: 0;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .layout {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template:
+      "header header" 55px
+      "left-menu main" 1fr /
+      50px 1fr;
+  }
+
+  .right-menu {
+    display: none;
+  }
+}

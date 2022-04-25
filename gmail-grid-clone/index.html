@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<!-- This is a quick and simple demonstration of my CSS Grids and Responsive Grids skills. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gmail basic layout</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="logo">
+          <a class="hamburger" href="#"
+            ><img
+              src="./assets/hamburger-icon.png"
+              alt="hamburger menu button"
+              width="30px"
+          /></a>
+          <a class="gmail-logo" href="#"
+            ><img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png"
+              alt="Gmail logo"
+              width="100px"
+          /></a>
+        </div>
+        <div class="search">
+          <div class="search-bar">
+            <a class="go" href="#"
+              ><img
+                src="./assets/search-icon.png"
+                alt="search button"
+                width="15px"
+            /></a>
+            <input
+              class="search-area"
+              type="text"
+              autocomplete="off"
+              placeholder="Search mail"
+            />
+            <a class="filter" href="#"
+              ><img
+                src="./assets/filter-icon.png"
+                alt="filter icon"
+                width="20px"
+            /></a>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="#" class="help"
+            ><img
+              src="./assets/q-mark-icon.png"
+              alt="question mark icon"
+              width="20px"
+          /></a>
+
+          <a href="#" class="settings">
+            <img src="./assets/cog-icon.png" alt="settings cog" width="25px"
+          /></a>
+
+          <a href="#" class="apps-menu">
+            <img
+              src="./assets/google-apps-icon.png"
+              alt="google apps menu icon"
+              width="20px"
+          /></a>
+
+          <a href="#" class="profile">
+            <img
+              src="./assets/account-icon.png"
+              alt="google account icon"
+              width="25px"
+          /></a>
+        </div>
+      </div>
+      <div class="left-menu">
+        <div class="compose">
+          <div class="button">
+            <img
+              class="icon"
+              src="./assets/plus-symbol.png"
+              alt="Compose Plus Symobl"
+            />
+            <div class="text">Compose</div>
+          </div>
+        </div>
+        <div class="folders">
+          <ul>
+            <li>
+              <img class="icon" src="./assets/inbox.png" alt="Inbox Icon" />
+              <div class="text">Inbox</div>
+              <div class="counter">9,999+</div>
+            </li>
+            <li>
+              <img class="icon" src="./assets/starred.png" alt="Starred Icon" />
+              <div class="text">Starred</div>
+              <div class="counter">99</div>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/important.png"
+                alt="Important Icon"
+              />
+              <div class="text">Important</div>
+              <div class="counter">400</div>
+            </li>
+            <li>
+              <img class="icon" src="./assets/sent.png" alt="Sent Icon" />
+              <div class="text">Sent</div>
+              <div class="counter">1</div>
+            </li>
+            <li>
+              <img class="icon" src="./assets/drafts.png" alt="Drafts Icon" />
+              <div class="text">Drafts</div>
+              <div class="counter"></div>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/chats-icon.png"
+                alt="Chats Icon"
+              />
+              <div class="text">Chats</div>
+              <div class="counter">9,999+</div>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/all-mail.png"
+                alt="All Mail Icon"
+              />
+              <div class="text">All-mail</div>
+              <div class="counter">9,999+</div>
+            </li>
+            <li>
+              <img class="icon" src="./assets/spam.png" alt="Spam Icon" />
+              <div class="text">Spam</div>
+              <div class="counter">999,999+</div>
+            </li>
+            <li>
+              <img class="icon" src="./assets/bin.png" alt="Bin Icon" />
+              <div class="text">Bin</div>
+              <div class="counter">9,999+</div>
+            </li>
+          </ul>
+        </div>
+        <div class="meet">
+          <p class="text">Meet</p>
+          <ul>
+            <li>
+              <img
+                class="icon"
+                src="./assets/new-meeting.png"
+                alt="New Meeting Video Camera Icon"
+              />
+              <div class="text">New meeting</div>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/join-meeting.png"
+                alt="Join a Meeting Icon"
+              />
+              <div class="text">Join a meeting</div>
+            </li>
+          </ul>
+        </div>
+        <div class="chat">
+          <p class="text">Hangouts</p>
+          <ul>
+            <li>
+              <img
+                class="icon"
+                src="./assets/account-icon.png"
+                alt="User Profile Picture"
+                width="20px"
+              />
+              <div class="text">User 1</div>
+              <img
+                class="icon"
+                src="./assets/add-icon.png"
+                alt="add icon"
+                width="20px"
+              />
+            </li>
+          </ul>
+
+          <div class="placeholder">
+            <img
+              src="./assets/placeholder.png"
+              alt="chat watermark"
+              width="75px"
+              draggable="false"
+            />
+          </div>
+
+          <div class="toolbar">
+            <img
+              class="icon"
+              src="./assets/contacts-icon.png"
+              alt="contacts icon"
+              width="20px"
+            />
+            <img
+              class="icon"
+              src="./assets/chats-icon.png"
+              alt="chats icon"
+              width="20px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="email-toolbar">
+          <div class="tools">
+            <img
+              class="icon"
+              src="./assets/selector.png"
+              alt="select all button"
+              width="20px"
+            />
+            <img
+              class="icon"
+              src="./assets/refresh.png"
+              alt="refersh button"
+              width="20px"
+            />
+            <img
+              class="icon"
+              src="./assets/more.png"
+              alt="more icon"
+              width="20px"
+            />
+          </div>
+          <div class="nav-tools">
+            <p class="page count">1-50 of 4,081</p>
+            <img
+              class="icon"
+              src="./assets/hide-icon.png"
+              alt="older emails button"
+              width="20px"
+              style="transform: scaleX(-1);"
+            />
+            <img
+              class="icon"
+              src="./assets/hide-icon.png"
+              alt="newer emails button"
+              width="20px"
+            />
+          </div>
+        </div>
+        <div class="email-area">
+          <div class="categories">
+            <div class="primary">
+              <img
+                class="icon"
+                src="./assets/inbox.png"
+                alt="primary inbox icon"
+                width="22px"
+              />
+              <p class="text">Primary</p>
+            </div>
+            <div class="social">
+              <img
+                class="icon"
+                src="./assets/social.png"
+                alt="social icon"
+                width="22px"
+              />
+              <p class="text">Social</p>
+            </div>
+            <div class="promotions">
+              <img
+                class="icon"
+                src="./assets/promotions.png"
+                alt="promotions icon"
+                width="22px"
+              />
+              <p class="text">Promotions</p>
+            </div>
+          </div>
+          <div class="emails">
+            <ul>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">Discord</p>
+                  <p class="email">
+                    <span>Important policy updates coming to Discord - </span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero facilis est, voluptatibus voluptate ratione in
+                    exercitationem, velit harum beatae optio reprehenderit earum
+                    minima hic eligendi, debitis ipsum tempore reiciendis
+                    inventore.
+                  </p>
+                </div>
+                <div class="time-date">17:30</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">ihackett@hauck.com</p>
+                  <p class="email">
+                    <span>Welcome to the Enrichment Centre - </span>Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">25 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">ystiedemann@towne.com</p>
+                  <p class="email">
+                    <span>Are you ready for your big day?</span>Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">24 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">dooley.ansel@hansen.biz</p>
+                  <p class="email">
+                    <span>Stand up straight!</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">24 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">glennie.gorczany@yahoo.com</p>
+                  <p class="email">
+                    <span>Where do you live?</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">24 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">queenie21@gmail.com</p>
+                  <p class="email">
+                    <span>Don’t worry about it!</span>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">maximillian09@moore.com</p>
+                  <p class="email">
+                    <span>Go home, weirdo!</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">mona.boyle@yahoo.com</p>
+                  <p class="email">
+                    <span>Do pigs like milk?</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">watsica.giovanny@yahoo.com</p>
+                  <p class="email">
+                    <span>Do you know what day it is?</span>Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Commodi aliquid
+                    mollitia delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">stuart39@herzog.org</p>
+                  <p class="email">
+                    <span>That’s right, and don't you ever forget it!</span
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Commodi aliquid mollitia delectus praesentium, eaque
+                    consequuntur tempora voluptatibus exercitationem unde quam,
+                    voluptatem similique voluptate eos distinctio. Quasi placeat
+                    aspernatur temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">else.oconner@jast.org</p>
+                  <p class="email">
+                    <span>Do you deliver to this address?</span>Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">qvonrueden@hotmail.com</p>
+                  <p class="email">
+                    <span>Don’t get too excited!</span>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">webster.heaney@white.com</p>
+                  <p class="email">
+                    <span>Would you like a drink?</span>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">neva.dare@davis.com</p>
+                  <p class="email">
+                    <span>Do you think it's worth something?</span>Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">bwilliamson@yahoo.com</p>
+                  <p class="email">
+                    <span>How amazing she is!</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">spencer.okuneva@heathcote.net</p>
+                  <p class="email">
+                    <span>What are you doing?</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">vdooley@koss.com</p>
+                  <p class="email">
+                    <span>Sit down, please!</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">clueilwitz@reynolds.com</p>
+                  <p class="email">
+                    <span>Have you ever been late a day in your life?</span
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Commodi aliquid mollitia delectus praesentium, eaque
+                    consequuntur tempora voluptatibus exercitationem unde quam,
+                    voluptatem similique voluptate eos distinctio. Quasi placeat
+                    aspernatur temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">kamryn.ohara@yahoo.com</p>
+                  <p class="email">
+                    <span>you're going to the game!</span>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">lew42@yahoo.com</p>
+                  <p class="email">
+                    <span>What's your favorite animal?</span>Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Commodi aliquid
+                    mollitia delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">herminia.maggio@corkery.net</p>
+                  <p class="email">
+                    <span>Let's go to the mall today!</span>Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Commodi aliquid
+                    mollitia delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">kling.irma@hermann.com</p>
+                  <p class="email">
+                    <span>Keep it up!</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">nigel.larson@terry.org</p>
+                  <p class="email">
+                    <span
+                      >I am a prince of a lost nation, help me and I will give
+                      you the world</span
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Commodi aliquid mollitia delectus praesentium, eaque
+                    consequuntur tempora voluptatibus exercitationem unde quam,
+                    voluptatem similique voluptate eos distinctio. Quasi placeat
+                    aspernatur temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">kkunde@hotmail.com</p>
+                  <p class="email">
+                    <span>Man what are these weird email titles</span>Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">bernhard.adams@marquardt.net</p>
+                  <p class="email">
+                    <span>Idk but now I wonder if Pigs like milk</span>Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                    aliquid mollitia delectus praesentium, eaque consequuntur
+                    tempora voluptatibus exercitationem unde quam, voluptatem
+                    similique voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+              <li>
+                <div class="selectors">
+                  <img
+                    class="icon"
+                    src="./assets/selector.png"
+                    alt="select button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/starred-selector.png"
+                    alt="star button"
+                    width="20px"
+                  />
+                  <img
+                    class="icon"
+                    src="./assets/important-selector.png"
+                    alt="select important button"
+                    width="20px"
+                  />
+                </div>
+                <div class="email">
+                  <p class="sender">johnston.jovany@gmail.com</p>
+                  <p class="email">
+                    <span>Not you too...</span>Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Commodi aliquid mollitia
+                    delectus praesentium, eaque consequuntur tempora
+                    voluptatibus exercitationem unde quam, voluptatem similique
+                    voluptate eos distinctio. Quasi placeat aspernatur
+                    temporibus cum.
+                  </p>
+                </div>
+                <div class="time-date">23 Feb</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-menu">
+        <div class="apps">
+          <ul>
+            <li>
+              <img
+                class="icon"
+                src="./assets/calendar.png"
+                alt="calendar app"
+                width="25px"
+              />
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/keep.png"
+                alt="keep app icon"
+                width="25px"
+              />
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/tasks.png"
+                alt="tasks app"
+                width="25px"
+              />
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/contacts_2x.png"
+                alt="contacts app"
+                width="25px"
+              />
+            </li>
+          </ul>
+          <img
+            class="add-icon"
+            src="./assets/add-icon.png"
+            alt="add icon"
+            width="20px"
+          />
+        </div>
+        <div class="hide">
+          <img
+            class="icon"
+            src="./assets/hide-icon.png"
+            alt="hide menu icon"
+            width="20px"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
